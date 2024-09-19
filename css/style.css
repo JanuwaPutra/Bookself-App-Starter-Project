@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f2f5;
+}
+
+header {
+    background: linear-gradient(90deg, #7b2ff7, #f107a3);
+    padding: 16px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #9475EA;
+    border-radius: 8px;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: #F5F1FF;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 12px;
+    margin: 20px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+input[type="text"], input[type="number"] {
+    width: 100%;  
+    padding: 10px;  
+    margin: 10px 0; 
+    box-sizing: border-box;  
+    border: 1px solid #ccc;  
+    border-radius: 5px;  
+    font-size: 16px;  
+}
+
+input:focus {
+    border-color: #7b2ff7;
+    outline: none;
+}
+
+.btn-submit {
+    background: linear-gradient(90deg, #7b2ff7, #f107a3);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: linear-gradient(90deg, #5e19c4, #c2056e);
+}
+
+.list-item {
+    margin-top: 20px;
+}
+
+.item {
+    padding: 16px;
+    background: #f5f7fa;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.item .inner {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.item h2 {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 0;
+}
+
+.item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+.check-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.pencil-square{
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/pencil-square.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+
+    margin-right: 20px;
+}
+
+
+.pencil-square:hover {
+    background: url('../assets/pensil-square-hover.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+footer {
+    background-color: #5F30E2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+}
